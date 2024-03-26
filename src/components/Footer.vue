@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="footer-top showbig">
+    <div class="footer-top show-big">
 
       <div class="payments-icons">
         <template v-for="method in payments" :key="method.name">

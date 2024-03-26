@@ -21,6 +21,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(47,49,65,255);
+  text-align: center;
   width: 100svw;
   height: 100svh;
   overflow-x: hidden;

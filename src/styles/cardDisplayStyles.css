@@ -201,4 +201,35 @@
     display: block;
     color: var(--game-color);
   }
+
+  .page-button{
+    display: none;
+  }
+  .page-button.page-active, .next-button, .previous-button{
+    display: block;
+  }
+  .page-button.page-active{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+  }
+ 
+  .main-sort{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    text-align: left;
+  }
+
+  .main-sorter-top{
+    font-size: 0.7rem;
+  }
+  .main-sorter-bottom{
+    font-size: 0.8rem;
+  }
+  .sort-icon{
+    display: none;
+  }
 }

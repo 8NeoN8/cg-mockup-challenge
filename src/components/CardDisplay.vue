@@ -37,25 +37,26 @@
           />
           <div :class="index%2 == 0 ? 'break': ''"></div>
       </template>
-    </div>
-    <div class="pagination">
-      <div class="previous-button page-button">
-        <div class="previous-icon">
-          <i class="fa-solid fa-angle-left"></i>
-        </div>
-      </div>
-      <div class="item-pages">
-        <template v-for="n in 6" :key="n">
-          <div class="page-button" :class="n == 1 ? 'page-active' : n == 5 ? 'ellipsis-page' : ''">
-            <span v-if="n < 5">{{ n }}</span>
-            <span v-if="n == 5"> ... </span>
-            <span v-if="n == 6"> 11 </span>
+      
+      <div class="pagination">
+        <div class="previous-button page-button">
+          <div class="previous-icon">
+            <i class="fa-solid fa-angle-left"></i>
           </div>
-        </template>
-      </div>
-      <div class="next-button page-button">
-        <div class="next-icon">
-          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="item-pages">
+          <template v-for="n in 6" :key="n">
+            <div class="page-button" :class="n == 1 ? 'page-active' : n == 5 ? 'ellipsis-page' : ''">
+              <span v-if="n < 5">{{ n }}</span>
+              <span v-if="n == 5"> ... </span>
+              <span v-if="n == 6"> 11 </span>
+            </div>
+          </template>
+        </div>
+        <div class="next-button page-button">
+          <div class="next-icon">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
         </div>
       </div>
     </div>
