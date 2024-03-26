@@ -1,0 +1,236 @@
+.sorters{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 8rem 0 1rem;
+}
+
+.sorters-top{
+  width: 80%;
+}
+
+.page-title{
+  font-size: 3rem;
+  text-align: left;
+}
+
+.sorters-bottom{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 80%;
+}
+
+.game-select .fa-caret-up{
+  display: none;
+}
+
+.game-select:hover .fa-caret-down{
+  display: none;
+}
+.game-select:hover .fa-caret-up{
+  display: block;
+  color: var(--game-color);
+}
+
+.game-select, .item-search-bar-container{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(52, 57, 75, 0.4);
+}
+
+.game-select{
+  width: 25%;
+  gap: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+
+.game-select-img{
+  width: 25px;
+  height: 25px;
+}
+
+.game-select-text{
+  width: 80%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.item-search-bar-container{
+  width: 75%;
+  justify-content: space-between;
+}
+
+.item-search-bar{
+  color: var(--description-color);
+  display: flex;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: left;
+  padding-left: 0.5rem;
+}
+
+.item-search-icon .fa-solid{
+  color: gray;
+}
+
+.item-bar{
+  width: 100%;
+}
+
+#item-bar-search{
+  all: unset;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.side-sorters{
+  display: flex;
+  
+  height: 100%;
+  margin: 0;
+}
+
+.price-sorter{
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  text-align: left;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: rgba(52, 57, 75, 0.6);
+}
+
+.price-icon, .price-left{
+  display: flex;
+  align-items: center;
+}
+
+.price-left{
+  margin-right: 1rem;
+}
+
+.price-icon{
+  margin-right: 0.5rem;
+}
+
+.price-icon .fa-solid{
+  color: var(--game-color);
+  font-size: 24px
+}
+
+.price-top-text{
+  font-size: 0.7rem;
+  color: gray
+}
+
+.price-arrows{
+  display: flex;
+  align-items: center;
+}
+
+.price-arrows .fa-caret-up{
+  display: none;
+}
+
+.price-arrows:hover .fa-caret-down{
+  display: none;
+}
+.price-arrows:hover .fa-caret-up{
+  display: block;
+  color: var(--game-color);
+}
+
+/**/
+
+.type-sorter{
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  text-align: left;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1rem;
+  background-color: rgba(52, 57, 75, 0.6);
+}
+
+.type-icon, .type-left{
+  display: flex;
+  align-items: center;
+}
+
+.type-left{
+  margin-right: 1rem;
+}
+
+
+.type-icon{
+  margin-right: 0.5rem;
+}
+
+.type-icon .fa-solid{
+  color: var(--game-color);
+  font-size: 24px
+}
+
+.type-top-text{
+  font-size: 0.7rem;
+  color: gray;
+  white-space: nowrap;
+}
+
+.type-arrows{
+  display: flex;
+  align-items: center;
+}
+
+.type-arrows .fa-caret-up{
+  display: none;
+}
+
+.type-arrows:hover .fa-caret-down{
+  display: none;
+}
+.type-arrows:hover .fa-caret-up{
+  display: block;
+  color: var(--game-color);
+}
+
+@media only screen and (max-width: 1099px) {
+  .sorters-bottom{
+    flex-direction: column;
+  }
+
+  .game-select{
+    width: 100%;
+  }
+
+  .item-search-bar-container{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .item-search-bar{
+    width: 100%;
+  }
+
+  .side-sorters, .price-sorter, .type-sorter,.item-search-bar{
+    width: 100%;
+  }
+
+  .item-search-bar{
+    padding: 0.5rem;
+  }
+
+  .price-sorter{
+    width: 100%;
+  }
+}

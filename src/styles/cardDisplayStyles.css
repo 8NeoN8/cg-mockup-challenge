@@ -1,0 +1,204 @@
+.card-display{
+  background-color: var(--primary-color);
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.cards-displayed{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  overflow-y: auto;
+  gap: 1rem;
+  max-width: 1180px;
+  padding-left: 1rem;
+  overflow-x: hidden;
+}
+
+.cards-displayed::-webkit-scrollbar{
+  background-color: var(--primary-color);
+  width: 5px;
+}
+.cards-displayed::-webkit-scrollbar-thumb{
+  background-color: var(--add-button-color);
+  border-radius: 2px;
+}
+
+.cards-displayed::-webkit-scrollbar-track{
+  background-color: noe;
+  width: 3px;
+}
+
+.break{
+  flex-basis: 100%;
+  height: 0;
+  width: 0;
+}
+
+.showing-pages-main-sort{
+  width: 81.5%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.showing-pages{
+  color: var(--description-color);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-sort{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+  text-align: left;
+}
+
+.sort-icon{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.fa-sliders{
+  color: var(--game-color);
+}
+
+.main-sorter{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.main-sorter-top{
+  padding-top: 0.3rem;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.select-icon{
+  padding: 0.5rem;
+  padding-top: 1rem;
+}
+.select-icon .fa-caret-up{
+  display: none;
+}
+
+.select-icon:hover .fa-caret-down{
+  display: none;
+}
+.select-icon:hover .fa-caret-up{
+  display: block;
+  color: var(--game-color);
+}
+
+.pagination{
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.item-pages{
+  display: flex;
+  gap: 1rem;
+}
+
+.page-button, .ellipsis-page{
+  width: 45px;
+  height: 45px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.page-button{
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.previous-button, .next-button{
+  border: 1px solid var(--add-button-color);
+  height: 45px;
+  padding: 0.5rem 0.5rem 0 0.8rem;
+}
+
+.page-active{
+  background-color: var(--add-button-color);
+}
+
+.page-button:active{
+  background-color: var(--add-button-color);
+}
+.page-button.ellipsis-page:active{
+  background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 530px) {
+  .showing-pages-main-sort{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  
+  .showing-pages{
+    color: var(--description-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .main-sort{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    text-align: left;
+  }
+  
+  .sort-icon{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  
+  .fa-sliders{
+    color: var(--game-color);
+  }
+  
+  .main-sorter{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .main-sorter-top{
+    padding-top: 0.3rem;
+    color: gray;
+    font-size: 0.8rem;
+  }
+  
+  .select-icon{
+    padding: 0.5rem;
+    padding-top: 1rem;
+  }
+  .select-icon .fa-caret-up{
+    display: none;
+  }
+  
+  .select-icon:hover .fa-caret-down{
+    display: none;
+  }
+  .select-icon:hover .fa-caret-up{
+    display: block;
+    color: var(--game-color);
+  }
+}

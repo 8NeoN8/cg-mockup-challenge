@@ -1,0 +1,251 @@
+.nav-bar{
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color) ;
+  width: calc(100vw - 5px);
+  height: 70px;
+  align-items: center;
+  padding-left: 1rem;
+  color: white
+}
+
+.nav-left-side{
+  display: flex;
+  justify-content:space-between;
+  margin-top: -20px;
+}
+
+.burger-menu{
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon{
+  font-size: 18px;
+  color: rgb(207, 210, 213);
+  position: absolute;
+  top: 21px;
+  left: 0;
+  cursor: pointer;
+}
+
+.logo-display{
+  margin-left: 25px;
+  display: flex;
+  align-items: top;
+  cursor: pointer;
+}
+
+#logo-img{
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* .nav-right-side{
+  display: flex;
+  justify-content:space-between;
+} */
+
+.sign-in-button{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(72, 227, 72);
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.sign-in-button:active{
+  background-color: rgb(55, 173, 55);
+}
+.sign-in-text{
+  font-size: 0.8rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.sign-in-icon{
+  padding-left: 5px;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+}
+
+.nav-middle{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  border-left: 1px solid rgb(156, 160, 164);;
+  color: rgb(207, 210, 213);
+  padding-left: 2%;
+  margin-left: 3%;
+}
+
+.option-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.option{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.arrow-up{
+  display: none !important;
+  color: var(--game-color);
+}
+.option:hover .arrow-up{
+  display: block !important;
+}
+.option:hover .arrow-down{
+  display: none !important;
+}
+
+.option-text{
+  margin-right: 5px;
+}
+
+.middle-cart{
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  align-items: center;
+}
+
+.currency-display{
+  display: flex;
+}
+.currency-text{
+  margin-right: 5px;
+}
+
+
+.cart-button{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.cart-icon{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.nav-bar-side-menu{
+  width: 100vw;
+  height: 100svh;
+  background-color: rgba(48, 49, 65, 1);
+  /* 
+  rgba(55, 56, 75, 1);
+rgba(48, 49, 65, 1);
+  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: sidebar 0.3s;
+}
+
+@keyframes sidebar {
+  from {width: 0;}
+  to {width: 100vw;}
+}
+
+.top-search-close,.search-bar, .close-button{
+  all: unset;
+  display: flex;
+}
+.top-search-close{
+  width: 100%;
+  height: 4.5rem;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 3px gray solid;
+  animation: fade-in 0.6s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.close-button{
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  flex: 0;
+}
+.close-text{
+  margin-left: 10px;
+}
+
+.search-bar{
+  width: calc(100% - 150px);
+  background-color: rgb(61, 74, 100);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-icon{
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+#bar-search{
+  all: unset;
+  height: 100%;
+  z-index: 20;
+  text-align: left;
+  padding-left: 0.5rem;
+  width: 80.1vw;
+}
+
+
+
+@media only screen and (min-width: 1100px) {
+  .logo-display{
+    margin-left: 5px;
+    display: flex;
+    align-items: top;
+    cursor: pointer;
+  }
+  .nav-middle{
+    margin-right: 15px;
+  }
+}
+
+.side-option-list{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  animation: fade-in 0.6s;
+  justify-content: center;
+}
+
+.side-option{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px rgba(128, 128, 128, 0.40) solid;
+}
+
+.side-option:hover .arrow-up{
+  display: block !important;
+}
+.side-option:hover .arrow-down{
+  display: none !important;
+}

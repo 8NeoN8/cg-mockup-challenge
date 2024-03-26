@@ -1,0 +1,116 @@
+:root{
+  --primary-color:#37384b;
+  --secondary-color:#303141;
+  --card-color: #313648;
+  --card-amount-color: #363e54;
+  --sale-color: #38e29c;
+  --game-color: #38e29c;
+  --add-button-color: #5662d4;
+  --description-color: #767a8c;
+  --details-button-color: #34394b;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+#app {
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(47,49,65,255);
+  width: 100svw;
+  height: 100svh;
+  overflow-x: hidden;
+}
+
+#background-image{
+  height:100%;
+  width: 100%;
+  object-fit:fill;
+}
+
+.background-layer{
+  z-index: 0;
+  width: 100svw;
+  height: 100svh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.background-layer::after{
+  background: linear-gradient(
+    to top, 
+    rgba(47,49,65,1) 0%,
+    rgba(47,49,65,1) 35%,
+    rgba(0,0,0,0) 100%
+  );
+  /* background: linear-gradient(rgba(47,49,65,0.7), rgba(47,49,65,0.9),  rgba(47,49,65)); */
+  z-index: 0;
+  width: 100svw;
+  height: 100svh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.background-layer::before{
+  z-index: 10;
+  content: "";
+  width: 100vw;
+  min-height: 35%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47,49,65);
+}
+
+.content{
+  padding-top: 75px;
+  color: red;
+}
+
+.dont-show-big{
+  display: none;
+}
+
+#app::-webkit-scrollbar{
+  background-color: var(--primary-color);
+  width: 5px;
+}
+#app::-webkit-scrollbar-thumb{
+  background-color: var(--add-button-color);
+  border-radius: 2px;
+}
+
+#app::-webkit-scrollbar-track{
+  background-color: noe;
+  width: 3px;
+}
+
+@media only screen and (max-width: 1099px) {
+  .show-big{
+    display:none !important;
+  }
+  .dont-show-big{
+    display:block !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  
+  .dont-show-big{
+    display:none !important;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .show-medium{
+    display:none !important;
+  }
+}

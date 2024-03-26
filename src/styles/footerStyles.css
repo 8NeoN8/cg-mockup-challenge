@@ -1,0 +1,309 @@
+*{
+  color: #ffffff;
+}
+.footer, .footer-top, .footer-middle, .footer-bottom{
+  width: 100%;
+}
+.footer{
+  height: fit-content;
+  background-color:var(--card-color);
+}
+
+.footer-top{
+  background-color: var(--secondary-color);
+  padding: 0.8rem 0;
+}
+
+.payments-icons{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  /* width: 50%; a partir de mid size o tal vez big size
+  padding-left: 20%;*/
+}
+
+.payment-icon{
+  width: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.american-express-icon{
+  height: 70px;
+  width: 50px;
+  position: absolute;
+  top:-20px;
+  left: 0;
+}
+
+.skrill-icon{
+  height: 20px;
+}
+
+div:has(> .bitcoin-icon){
+  width: 30px;
+}
+
+.bitcoin-icon{
+  width: 30px;
+}
+
+.more-text{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-middle{
+  display: flex;
+  justify-content: center;
+}
+
+.socials-icons{
+  display: flex;
+  border-bottom: rgba(128, 128, 128, 0.40) 1px solid;
+  width: 70%;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+.social-icon{
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-mail{
+  
+  margin-bottom: 0.5rem;
+}
+.support-mail{
+  font-size: 12px;
+}
+
+.cg-logo-mail{
+  margin-bottom: 1rem;
+}
+
+.bit-parent{
+  font-weight: bold;
+}
+
+.bit-children{
+  font-weight: 100;
+  color: rgb(158, 158, 158);
+}
+
+.trust-big{
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.big-trust-star{
+  width:15px;
+  height:15px;
+}
+.big-trust-text{
+  padding-left: 0.5rem;
+}
+
+.trust-small{
+  display: flex;;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+.small-trust-star{
+  width:85px;
+  height:55px;;
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+.small-trust-text{
+  font-size: 14px;
+}
+
+.copyright-bottom{
+  text-align: center;
+  font-size: 14px;
+  color: rgb(158, 158, 158);
+  padding: 1rem 0;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.show-open{
+animation: openHeight 0.2s;
+}
+
+.show-close{
+  animation: closeHeight 0.2s;
+}
+
+@keyframes openHeight {
+  from { height:0%; opacity: 0;}
+  to { height:100%; opacity: 1;}
+}
+
+@keyframes closeHeight {
+  from { height:100%; opacity: 1;}
+  to { height:0%; opacity: 0;}
+}
+
+@media only screen and (min-width: 840px) {
+  .payments-icons{
+    width: 55%;
+    padding-left: 3%; 
+  }
+  
+  .payment-icon{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .american-express-icon{
+    height: 90px;
+    width: 60px;
+  }
+
+  .skrill-icon{
+    height: 20px;
+  }
+  
+  div:has(> .bitcoin-icon){
+    width: 40px;
+  }
+  
+  .bitcoin-icon{
+    width: 35px;
+    height: 35px;
+  }
+  .visa-icon{
+    width: 60px;
+    height: 40px;
+  }
+  .mastercard-icon{
+    width: 60px;
+    height: 30px;
+  }
+
+  .more-text{
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .socials-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 1100px) {
+  
+  .payments-icons{
+    width: 55%;
+    padding-left: 10%; 
+  }
+  .payment-icon{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .american-express-icon{
+    height: 90px;
+    width: 70px;
+  }
+  .skrill-icon{
+    height: 25px;
+  }
+  div:has(> .bitcoin-icon){
+    width: 50px;
+  }
+  .bitcoin-icon{
+    width: 45px;
+    height: 45px;
+  }
+  .visa-icon{
+    width: 70px;
+    height: 50px;
+  }
+  .mastercard-icon{
+    width: 70px;
+    height: 40px;
+  }
+  .more-text{
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .socials-icons{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin-left: 10%;
+    width: 70%;
+  }
+
+  .footer-middle{
+    justify-content: left;
+  }
+  .footer-bottom-info{
+    width: 100%;
+    padding: 1rem 11% 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .support-mail{
+    text-align: left;
+    font-size: 0.85rem;
+  }
+
+  .info-bits{
+    display: flex;
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: space-around;
+    text-align: left;
+  }
+  .bit-children{
+    margin: 0.5rem 0;
+  }
+
+  .bit-children-container{
+    display: block !important;
+  }
+
+  .trust-rating{
+    padding-top: 1rem;
+    width: fit-content;
+  }
+  .big-trust-text{
+    white-space: nowrap;
+  }
+
+  .show-open{
+    display: block;
+  }
+  .show-close{
+    display: block;
+  }
+  .hidden{
+    display: block;
+  }
+}
