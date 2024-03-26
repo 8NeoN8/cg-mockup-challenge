@@ -42,11 +42,6 @@
   min-width: 100%;
 }
 
-/* .nav-right-side{
-  display: flex;
-  justify-content:space-between;
-} */
-
 .sign-in-button{
   display: flex;
   justify-content: space-between;
@@ -145,10 +140,6 @@
   width: 100vw;
   height: 100svh;
   background-color: rgba(48, 49, 65, 1);
-  /* 
-  rgba(55, 56, 75, 1);
-rgba(48, 49, 65, 1);
-  */
   position: absolute;
   top: 0;
   left: 0;

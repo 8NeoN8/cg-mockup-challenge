@@ -81,20 +81,6 @@ export default {
   data() {
     return {
       amountToBuy:1,
-      /* isOnSale:true,
-      inStock:true,
-      amountToBuy:1,
-
-      image:"https://oldschool.runescape.wiki/images/thumb/3rd_age_druidic_cloak_detail.png/800px-3rd_age_druidic_cloak_detail.png?7bc73",
-
-      itemName:"3rd age druidic cloak",
-      itemGame:"OSRS",
-      itemGameImg:"https://cdn2.steamgriddb.com/icon_thumb/6c8349cc7260ae62e3b1396831a8398f.png",
-
-      itemDiscountPrice:'$200.00',
-      itemActualPrice:'$350.75',
-
-      itemDescription:"Lorem ipsum dolor sit amet, consectetur adipisicing elit.", */
     }
   },
   props: {

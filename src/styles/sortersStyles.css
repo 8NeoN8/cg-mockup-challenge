@@ -148,8 +148,6 @@
   color: var(--game-color);
 }
 
-/**/
-
 .type-sorter{
   display: flex;
   justify-content: center;
